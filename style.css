@@ -1,0 +1,446 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.contenedor-general {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+/*seteos generales de segundo orden..........................*/
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+a:visited {
+  color: unset;
+  text-decoration: none;
+}
+
+section {
+  min-height: 2rem;
+}
+
+section {
+  width: 100vw;
+  padding: 0 1rem 0 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+/*<!--Main___________________________________________________________________________________________________________________________-->
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  <!--_______________________________________________________________________________________________________________________________-->*/
+
+main {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: aliceblue;
+  position: relative;
+  padding: 0 1rem 0 1rem;
+  background-image: url(./img/escultura-justicia.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.logo-principal {
+  margin-top: 30vh;
+  height: 30vh;
+  max-height: 30vh;
+  max-width: 90vw;
+  margin-left: 5%;
+}
+
+.logo-alternativo {
+  display: none;
+}
+
+@media (max-width: 683px) {
+  .logo-principal {
+    margin-left: 2%;
+    height: auto;
+    width: 90vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo-principal {
+    display: none;
+  }
+  .logo-alternativo {
+    padding-top: 15vh;
+    margin: 0 auto 0 auto;
+    display: block;
+    height: auto;
+    width: 80vw;
+  }
+}
+
+main p {
+  margin: 1rem 2rem 0 2rem;
+  font-size: 2.3rem;
+  margin-left: 5%;
+}
+
+@media (max-width: 550px) {
+  main p {
+    font-size: 2rem;
+  }
+}
+
+@media (min-height: 350px) {
+  main p {
+    font-size: 1.6rem;
+  }
+}
+
+.link-contactanos {
+  font-size: 2.3rem;
+  margin-top: 2.6rem;
+  display: inline-block;
+  margin-left: 15%;
+  border: solid 0.3rem aliceblue;
+  padding: 2rem;
+}
+
+@media (max-width: 550px) {
+  .link-contactanos {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .link-contactanos {
+    width: 16rem;
+    display: block;
+    margin: 4rem auto 0 auto;
+  }
+}
+
+.boton-siguiente-sección {
+  font-size: 3rem;
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+}
+
+/*<!--Sección - Servicios___________________________________________________________________________________________________________________________-->
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  <!--_______________________________________________________________________________________________________________________________-->*/
+
+.seccion-servicios {
+  background-color: rgba(0, 0, 255, 0);
+  position: relative;
+}
+
+.contenedor-todos-los-servicios {
+  display: flex;
+}
+
+/*<!--servicios específicos___________________________________________________________________________________________________________________________-->*/
+
+.contenedor-servicios-especificos {
+  width: 25%;
+  background-color: rgba(255, 0, 0, 0);
+  height: 45rem;
+  background-color: rgba(0, 255, 255, 0);
+  overflow: scroll;
+}
+
+@media (max-width: 650px) {
+  .contenedor-servicios-especificos {
+    width: 60%;
+  }
+}
+
+@media (max-width: 450px) {
+  .contenedor-servicios-especificos {
+    display: none;
+  }
+}
+
+.contenedor-servicios-especificos a {
+  display: block;
+  padding: 1rem;
+  margin: 0.5rem;
+  border-left: solid 0.5rem rgba(13, 96, 173, 0);
+}
+
+.contenedor-servicios-especificos a:hover {
+  border-left: solid 0.5rem rgba(13, 96, 173, 0.637);
+}
+
+/*<!--servicios generales___________________________________________________________________________________________________________________________-->*/
+
+.contenedor-servicios-generales {
+  margin: 2rem;
+  width: 75%;
+  background-color: rgba(0, 255, 255, 0);
+}
+
+@media (max-width: 450px) {
+  .contenedor-servicios-generales {
+    width: 100%;
+  }
+}
+
+.contenedor-itmes-servicios-generales {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  background-color: rgba(137, 43, 226, 0);
+}
+
+@media (max-width: 850px) {
+  .contenedor-itmes-servicios-generales {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .contenedor-itmes-servicios-generales {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contenedor-itmes-servicios-generales li {
+  height: 20rem;
+  background-color: rgba(0, 0, 255, 0);
+}
+
+@media (max-width: 450px) {
+  .contenedor-itmes-servicios-generales li {
+    height: 12rem;
+  }
+}
+
+.item {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 128, 0, 0);
+  border-radius: 10px;
+  justify-content: space-around;
+}
+
+.item li {
+  height: auto;
+  color: aliceblue;
+  text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 1);
+}
+
+.item li:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+@media (max-width: 330px) {
+  .item li:nth-child(2) {
+    font-size: 1.2rem;
+  }
+}
+
+/*Derecho Civil----------------------------------------------------*/
+.derecho-civil {
+  background-image: url(./img/servicios-civil2\ -\ Copy.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.derecho-civil:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.derecho-civil div {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(13, 96, 173, 0.637);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.derecho-civil div:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.6s;
+}
+
+/*Derecho Familia----------------------------------------------------*/
+.derecho-familia {
+  background-image: url(./img/servicios-familia.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.derecho-familia:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.derecho-familia div {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(99, 52, 126, 0.603);
+  background-color: rgba(13, 96, 173, 0.637);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.derecho-familia div:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.6s;
+}
+
+/*Derecho laboral----------------------------------------------------*/
+.derecho-laboral {
+  background-image: url(./img/servicios-laboral1.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.derecho-laboral:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.derecho-laboral div {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(94, 168, 131, 0.671);
+  background-color: rgba(13, 96, 173, 0.637);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.derecho-laboral div:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.6s;
+}
+
+/*Derecho deudores----------------------------------------------------*/
+.derecho-deudores {
+  background-image: url(./img/servicios-deudas.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.derecho-deudores:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.derecho-deudores div {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(148, 168, 94, 0.671);
+  background-color: rgba(13, 96, 173, 0.637);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.derecho-deudores div:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.6s;
+}
+
+/*Derecho comercial----------------------------------------------------*/
+.derecho-comercial {
+  background-image: url(./img/servicios-comercial.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.derecho-comercial:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.derecho-comercial div {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(134, 90, 49, 0.671);
+  background-color: rgba(13, 96, 173, 0.637);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.derecho-comercial div:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.6s;
+}
+
+/*Derecho Penal----------------------------------------------------*/
+.derecho-penal {
+  background-image: url(./img/servicios-penal.jpg);
+  background-size: 130%;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.derecho-penal:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+.derecho-penal div {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(134, 62, 49, 0.671);
+  background-color: rgba(13, 96, 173, 0.637);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.derecho-penal div:hover {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.6s;
+}
+
+@media (max-width: 450px) {
+  .item div {
+    padding: 0.7rem;
+  }
+}
